@@ -17,13 +17,13 @@ changebtn.onclick=()=> bgcolor(changebtn)
 var buildbtn = document.querySelector("#build-button")
 var statementBox = document.querySelector("#statement")
 function makesentence(a) {
-    var noun = document.getElementById("noun").value
-    var verb = document.getElementById("verb").value
-    var adverb = document.getElementById("adverb").value
-    var sentence = noun + " " + verb + " " + adverb
+    let noun = document.getElementById("noun").value
+    let verb = document.getElementById("verb").value
+    let adverb = document.getElementById("adverb").value
+    let sentence = noun + " " + verb + " " + adverb
     a.innerHTML = sentence
 }
-buildbtn.addEventListener("click",makesentence(statementBox))
+buildbtn.addEventListener("click",()=>{makesentence(statementBox)})
 
 //Challenge 4.1
 var grandparent = document.querySelector("#grandparent")
